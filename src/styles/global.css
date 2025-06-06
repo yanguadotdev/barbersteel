@@ -6,6 +6,8 @@
     'Noto Sans', helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   --font-primary: 'Inter';
   --font-secondary: 'Bebas Neue';
+
+  --header-height: 8rem;
 }
 
 @layer base {
