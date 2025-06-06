@@ -15,3 +15,13 @@ import Slider from '@/components/Slider.astro'
     <Slider className='-mt-12' />
   </div>
 </section>
+
+<script>
+  import { $ } from '@/lib/dom-selector'
+
+  const slider = $('[data-slider]') as HTMLElement
+  const sliderTrack = $('[data-slider-content]') as HTMLElement
+
+  sliderTrack.classList.add('animate-marquee')
+  slider.appendChild(sliderTrack.cloneNode(true))
+</script>

@@ -28,9 +28,7 @@ export const heroSlider = [
     type: 'video',
     aspect: 'video',
     box: {
-      label: '¿qué haremos por tí?',
-      labelLink: 'Ver video',
-      link: '',
+      label: 'Precisión. Estilo. Carácter.',
       positionX: 'right',
       positionY: 'bottom'
     }
@@ -41,8 +39,6 @@ export const heroSlider = [
     aspect: 'square',
     box: {
       label: 'conoce a nuestro barberos',
-      labelLink: 'Ver todos',
-      link: '#barbers',
       positionX: 'left',
       positionY: 'top'
     }
@@ -59,9 +55,7 @@ export const heroSlider = [
     aspect: 'video',
     box: {
       label: 'ambiente de lujo',
-      labelLink: 'Ver fotos',
-      link: '#gallery',
-      positionX: 'right',
+      positionX: 'left',
       positionY: 'top'
     }
   }

@@ -16,6 +16,14 @@
   --text-large: clamp(2rem, 10vw, 8rem);
 
   --header-height: 6rem;
+
+  --transition-duration: 20s;
+  --animate-marquee: marquee var(--transition-duration) linear infinite;
+  @keyframes marquee {
+    to {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 @layer base {
