@@ -1,0 +1,21 @@
+---
+import { navLinks } from '@/data/site-data'
+---
+
+<div>
+  <nav id='nav'>
+    <ul id='navList' class="font-secondary tracking-wide flex items-center justify-center">
+      {
+        navLinks.map((navLink) => {
+          const { label, link } = navLink
+
+          return (
+            <li class=" hover:text-primary">
+              <a class="px-4 py-2" href={link}>{label}</a>
+            </li>
+          )
+        })
+      }
+    </ul>
+  </nav>
+</div>

@@ -7,7 +7,12 @@
   --font-primary: 'Inter';
   --font-secondary: 'Bebas Neue';
 
-  --header-height: 8rem;
+  --color-primary: #ce9c65;
+  --color-dark: #282828;
+  --color-black: #1e1e1e;
+  --color-gray: #6d6e70;
+
+  --header-height: 6rem;
 }
 
 @layer base {
@@ -55,11 +60,14 @@
   color-scheme: light dark;
 }
 
-html {
+html,
+Body {
   font-family: 'Inter', var(--font-fallback);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  scrollbar-gutter: stable;
+  @apply bg-black;
 }
 
 @utility mask-fade-bottom {

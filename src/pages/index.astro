@@ -1,8 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from '@/layouts/Layout.astro'
+import Header from '@/sections/Header.astro'
 
 const fixedTitle =
   'BARBERSTEEL - Barbería Premium para el Hombre Moderno | Servicios de Corte Profesional'
 ---
 
-<Layout title={fixedTitle} />
+<Layout title={fixedTitle}>
+  <Header />
+</Layout>
