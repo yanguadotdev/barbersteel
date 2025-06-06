@@ -1,12 +1,17 @@
 ---
-import Button from "@/components/Button.astro";
+import Button from '@/components/Button.astro'
+import Slider from '@/components/Slider.astro'
 ---
 
 <section id='hero' class='relative z-10 min-h-screen pt-24'>
-  <div class='container max-w-7xl'>
-    <div class='font-secondary flex items-center gap-16 leading-none'>
-      <h1 class='text-large max-w-min'>FORJAMOS&nbsp;TU LOOK&nbsp;PERFECTO</h1>
+  <div>
+    <div
+      class='font-secondary container relative z-10 flex max-w-7xl items-center gap-16 leading-none'
+    >
+      <h1 class='text-large pointer-events-none max-w-min'>FORJAMOS&nbsp;TU LOOK&nbsp;PERFECTO</h1>
       <Button withBackground />
     </div>
+
+    <Slider className='-mt-12' />
   </div>
 </section>

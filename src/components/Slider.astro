@@ -1,0 +1,39 @@
+---
+import { heroSlider } from '@/data/site-data'
+import { cn } from '@/lib/utils'
+
+const { className }: { className?: string } = Astro.props
+---
+
+<section data-slider class={cn('overflow-hidden whitespace-nowrap', className)}>
+  <div data-slider-content class='flex gap-8 overflow-hidden whitespace-nowrap'>
+    {
+      heroSlider.map((slide) => {
+        const { imgsrc, aspect, box } = slide
+
+        return (
+          <div
+            class={`relative shadow-2xl inline-block aspect-${aspect} h-96 cursor-default select-none`}
+          >
+            <img class='size-full object-cover' src={imgsrc} alt='' />
+            {box && (
+              <div
+                class={`font-secondary absolute ${box.positionY}-0 ${box.positionX}-0 p-6 text-xl tracking-wider`}
+              >
+                <div>
+                  <span class='uppercase'>{box.label}</span>
+                  <a
+                    href={box.link}
+                    class='text-primary block text-base underline underline-offset-2'
+                  >
+                    Ver video
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
+        )
+      })
+    }
+  </div>
+</section>
