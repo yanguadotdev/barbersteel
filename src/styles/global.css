@@ -60,6 +60,13 @@
   }
 }
 
+@layer utilities {
+  .dot-grid {
+    background-image: radial-gradient(circle, white 2px, transparent 2px);
+    background-size: 20px 20px;
+  }
+}
+
 @font-face {
   font-family: 'Anisette';
   src: url('/fonts/Inter-variable.woff2') format('woff2');
@@ -86,7 +93,6 @@ Body {
   scrollbar-gutter: stable;
   @apply bg-black;
 }
-
 
 button {
   cursor: pointer;

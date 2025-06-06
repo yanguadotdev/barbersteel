@@ -12,7 +12,12 @@ import Slider from '@/components/Slider.astro'
       <Button withBackground />
     </div>
 
-    <Slider className='-mt-12' />
+    <div class='relative -mt-12'>
+      <div class='container absolute inset-x-0 bottom-5/6 right-0 flex h-60 max-w-7xl justify-end'>
+        <div class='dot-grid aspect-square h-full'></div>
+      </div>
+      <Slider />
+    </div>
   </div>
 </section>
 
