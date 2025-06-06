@@ -1,0 +1,22 @@
+---
+import { cn } from '@/lib/utils'
+
+interface ButtonProps {
+  withBackground?: boolean
+}
+const { withBackground = false }: ButtonProps = Astro.props
+---
+
+<button
+  class:list={cn(
+    'border-primary pointer-coarse:text-primary group relative border-2 px-12 py-4 text-2xl',
+    !withBackground && 'hover:text-primary',
+  )}
+>
+  {
+    withBackground && (
+      <div class='bg-primary pointer-coarse:hidden absolute right-0 top-1/2 -z-10 size-full origin-right -translate-x-[calc(100%-24px)] -translate-y-1/2 scale-75 scale-y-[5%] transition-transform duration-500 group-hover:translate-x-0 group-hover:scale-100' />
+    )
+  }
+  <span>RESERVAR AHORA</span>
+</button>
