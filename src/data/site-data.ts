@@ -133,3 +133,66 @@ export const services = [
     ]
   }
 ]
+
+
+
+export const barbers = [
+  {
+    name: 'stefan rodriguez nick',
+    imgsrc: '/barbers/stefan.webp',
+    socials: {
+      ig: '@stefanwellbarber',
+      twiter: '@stefanwellbarber',
+      facebook: '@stefanwellbarber'
+    },
+    awards: [
+      '2024, Nombrado barbero del año en la asociación de barberos',
+      '2023, Mejor barbero de corte oficial'
+    ]
+  },
+  {
+    name: 'diego martinez torres',
+    imgsrc: '/hero/barber.webp',
+    socials: {
+      ig: '@diegofademaster',
+      twiter: '@diegofademaster',
+      facebook: '@diegofademaster'
+    },
+    awards: [
+      '2024, Especialista certificado en fades y degradados',
+      '2023, Primer lugar en competencia nacional de barbería clásica',
+      '2022, Reconocimiento por excelencia en atención al cliente'
+    ]
+  },
+  {
+    name: 'alejandro vega morales',
+    imgsrc: '/barbers/alejandro.webp',
+    socials: {
+      ig: '@alexbeardspecialist',
+      twiter: '@alexbeardspecialist',
+      facebook: '@alexbeardspecialist'
+    },
+    awards: [
+      '2024, Maestro en cuidado y diseño de barbas',
+      '2023, Certificación internacional en técnicas de afeitado clásico',
+      '2023, Mejor barbero en estilo vintage y retro'
+    ]
+  },
+  {
+    name: 'carlos ruiz hernandez',
+    imgsrc: '/barbers/carlos.webp',
+    socials: {
+      ig: '@carlosstyleking',
+      twiter: '@carlosstyleking',
+      facebook: '@carlosstyleking'
+    },
+    awards: [
+      '2024, Innovador del año en técnicas de corte moderno',
+      '2023, Especialista certificado en cortes para niños',
+      '2023, Reconocimiento por mejor transformación capilar',
+      '2022, Barbero más joven en obtener certificación master'
+    ]
+  }
+]
+
+export type BarbersType = typeof barbers
