@@ -8,6 +8,7 @@
   --font-secondary: 'Bebas Neue';
 
   --breakpoint-2sm: 44rem; 
+  --breakpoint-xs: 25rem;
 
   --color-primary: #ce9c65;
   --color-dark: #282828;
