@@ -7,6 +7,8 @@
   --font-primary: 'Inter';
   --font-secondary: 'Bebas Neue';
 
+  --breakpoint-2sm: 44rem; 
+
   --color-primary: #ce9c65;
   --color-dark: #282828;
   --color-black: #1e1e1e;

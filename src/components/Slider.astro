@@ -12,7 +12,7 @@ const { className }: { className?: string } = Astro.props
         const { imgsrc, aspect, box } = slide
 
         return (
-          <div class={`relative inline-block aspect-${aspect} h-96 cursor-default select-none px-4`}>
+          <div class={`relative inline-block aspect-${aspect} h-96 cursor-default select-none mx-4`}>
             <img class='size-full object-cover' src={imgsrc} alt='' />
             {box && (
               <div

@@ -6,14 +6,16 @@ import Slider from '@/components/Slider.astro'
 <section id='hero' class='relative z-10 min-h-screen pt-24'>
   <div>
     <div
-      class='font-secondary container relative z-10 flex max-w-7xl items-center gap-16 leading-none'
+      class='font-secondary 2sm:flex-row container relative z-10 flex max-w-7xl flex-col 2sm:items-center gap-16 leading-none'
     >
       <h1 class='text-large pointer-events-none max-w-min'>FORJAMOS&nbsp;TU LOOK&nbsp;PERFECTO</h1>
       <Button withBackground />
     </div>
 
-    <div class='relative -mt-12'>
-      <div class='container absolute inset-x-0 bottom-5/6 right-0 flex h-60 max-w-7xl justify-end'>
+    <div class='relative mt-8 lg:-mt-12'>
+      <div
+        class='bottom-5/6 container absolute inset-x-0 right-0 hidden h-60 max-w-7xl justify-end lg:flex'
+      >
         <div class='dot-grid aspect-square h-full'></div>
       </div>
       <Slider />
