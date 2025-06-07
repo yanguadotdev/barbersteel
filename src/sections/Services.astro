@@ -1,5 +1,48 @@
+---
+import { services } from '@/data/site-data'
+---
+
 <section id='services' class='py-40'>
   <div class='container'>
-    <h2 class='text-big font-secondary leading-none'>NUESTROS SERVICIOS</h2>
+    <header class='relative'>
+      <div class='dot-grid absolute right-0 top-0 size-40'></div>
+
+      <h2 class='text-big font-secondary leading-none'>NUESTROS SERVICIOS</h2>
+      <p class='max-w-xl text-xl'>
+        Disfruta de una variedad de nuestros mejores servicios que te haran que su valor aumente
+        instantaneamente
+      </p>
+    </header>
+
+    <div class='mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
+      {
+        services.map((service) => {
+          const { items, icon: Icon } = service
+
+          return (
+            <ul class='bg-dark flex flex-col gap-8 p-10 py-16'>
+              <div class='text-primary'>
+                <Icon class='h-20' />
+              </div>
+
+              {items.map((item) => {
+                const { label, description, price } = item
+
+                return (
+                  <li>
+                    <div class='font-secondary flex items-center gap-4 text-nowrap text-xl leading-none'>
+                      <h4>{label}</h4>
+                      <div class='bg-primary h-0.5 w-full' />
+                      <p class='text-primary text-2xl'>{price}</p>
+                    </div>
+                    <p class='max-w-xs text-white/60'>{description}</p>
+                  </li>
+                )
+              })}
+            </ul>
+          )
+        })
+      }
+    </div>
   </div>
 </section>

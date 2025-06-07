@@ -5,8 +5,8 @@ import { cn } from '@/lib/utils'
 const { className }: { className?: string } = Astro.props
 ---
 
-<section data-slider class={cn('overflow-x-hidden w-full whitespace-nowrap', className)}>
-  <div data-slider-content class='inline-block whitespace-nowrap'>
+<section data-slider class={cn('overflow-hidden whitespace-nowrap', className)}>
+  <div data-slider-content class='inline-block w-max whitespace-nowrap overflow-hidden'>
     {
       heroSlider.map((slide) => {
         const { imgsrc, aspect, box } = slide
