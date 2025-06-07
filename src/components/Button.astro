@@ -3,14 +3,16 @@ import { cn } from '@/lib/utils'
 
 interface ButtonProps {
   withBackground?: boolean
+  className?: string
 }
-const { withBackground = false }: ButtonProps = Astro.props
+const { withBackground = false, className }: ButtonProps = Astro.props
 ---
 
 <button
   class:list={cn(
-    'border-primary pointer-coarse:text-primary group relative border-2 px-12 py-4 text-2xl',
+    'border-primary pointer-coarse:text-primary font-secondary group relative text-nowrap border-2 px-12 py-4 text-2xl',
     !withBackground && 'hover:text-primary',
+    className,
   )}
 >
   {

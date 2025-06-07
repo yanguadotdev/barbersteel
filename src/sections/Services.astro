@@ -1,4 +1,5 @@
 ---
+import Button from '@/components/Button.astro'
 import { services } from '@/data/site-data'
 ---
 
@@ -30,7 +31,7 @@ import { services } from '@/data/site-data'
 
                 return (
                   <li>
-                    <div class='font-secondary xs:flex-row flex flex-col xs:items-center gap-y-2 gap-4 text-nowrap text-xl leading-none'>
+                    <div class='font-secondary xs:flex-row xs:items-center flex flex-col gap-4 gap-y-2 text-nowrap text-xl leading-none'>
                       <h4>{label}</h4>
                       <div class='bg-primary xs:block hidden h-0.5 w-full' />
                       <p class='text-primary text-2xl'>{price}</p>
@@ -39,6 +40,7 @@ import { services } from '@/data/site-data'
                   </li>
                 )
               })}
+              <Button className='mt-auto' />
             </ul>
           )
         })
