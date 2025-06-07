@@ -147,7 +147,8 @@ export const barbers = [
     },
     awards: [
       '2024, Nombrado barbero del año en la asociación de barberos',
-      '2023, Mejor barbero de corte oficial'
+      '2023, Mejor barbero de corte oficial',
+      '2022, Barbero más joven en obtener certificación master'
     ]
   },
   {
@@ -190,7 +191,6 @@ export const barbers = [
       '2024, Innovador del año en técnicas de corte moderno',
       '2023, Especialista certificado en cortes para niños',
       '2023, Reconocimiento por mejor transformación capilar',
-      '2022, Barbero más joven en obtener certificación master'
     ]
   }
 ]

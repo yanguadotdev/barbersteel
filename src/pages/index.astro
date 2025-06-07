@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import Barbers from '@/sections/Barbers.astro'
+import Gallery from '@/sections/Gallery'
 import Header from '@/sections/Header.astro'
 import Hero from '@/sections/Hero.astro'
 import Services from '@/sections/Services.astro'
@@ -14,4 +15,5 @@ const fixedTitle =
   <Hero />
   <Services />
   <Barbers />
+  <Gallery client:load />
 </Layout>
