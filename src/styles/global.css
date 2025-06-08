@@ -18,6 +18,7 @@
 
   --text-big: clamp(2.5rem, 10vw, 12rem);
   --text-large: clamp(2rem, 10vw, 8rem);
+  --text-md: clamp(1.5rem, 8vw, 6rem);
 
   --header-height: 6rem;
 
@@ -72,9 +73,8 @@
 }
 
 @font-face {
-  font-family: 'Anisette';
+  font-family: 'Inter';
   src: url('/fonts/Inter-variable.woff2') format('woff2');
-  font-weight: 500;
   font-display: swap;
 }
 @font-face {
