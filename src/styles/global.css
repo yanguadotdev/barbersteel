@@ -95,7 +95,7 @@ Body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   scrollbar-gutter: stable;
-  scrollbar-behavior: none;
+  scroll-behavior: none;
   @apply bg-black;
 }
 
